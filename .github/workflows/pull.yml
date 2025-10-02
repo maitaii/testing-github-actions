@@ -1,0 +1,10 @@
+name: identity-example size diff
+on:
+  pull_request:
+jobs:
+  build-base:
+    name: Build base
+    runs-on: ubuntu-latest
+    steps:
+      - name: first
+        run: ./scripts/run.rb
